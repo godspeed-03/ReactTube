@@ -19,7 +19,7 @@ export default function SearchResult  ()  {
     const fetchSearchResults = () => {
         setLoading(true);
         fetchAPIData(`search/?q=${searchQuery}`).then((res) => {
-            console.log(res);
+            // console.log(res);
             setResult(res?.contents);
             setLoading(false);
         });
