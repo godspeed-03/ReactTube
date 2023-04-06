@@ -4,11 +4,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import ytLogo from "../image/yt-logo.png";
 import ytLogoMobile from "../image/yt-logo-mobile.png";
 
-import { SlMenu } from "react-icons/sl";
 import { IoIosSearch } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { FiBell } from "react-icons/fi";
-import { CgClose } from "react-icons/cg";
+import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineClose} from 'react-icons/ai'
 
 import { Context } from "../assets/context";
 import Loader from "../loader/Loader";
@@ -49,9 +49,9 @@ export default function Header() {
             onClick={mobileMenuToggle}
           >
             {mobileMenu ? (
-              <CgClose className="bg-white text-xl" />
+              <AiOutlineClose className="text-white text-xl" />
             ) : (
-              <SlMenu className="bg-white text-xl" />
+              <AiOutlineMenu className="text-white text-xl" />
             )}
           </div>
         )}
